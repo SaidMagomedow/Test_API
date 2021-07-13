@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список книг</title>
+</head>
+<body>
+{% for author in author_list %}
+<div>{{ author.pk }}.{{ author }}</div>
+<div>Список книг : {% for i in author.books_set.values %}
+    {{ i.title }}
+</div>
+{% endfor %}
+{% endfor %}
+</body>
+</html>

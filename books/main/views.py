@@ -28,8 +28,8 @@ class BookDetailView(APIView):
     Вывод одной книги
     """
     def get(self, request, pk):
-        movie = Books.objects.get(pk=pk)
-        serializer = BooksSerializer(movie)
+        book = Books.objects.get(pk=pk)
+        serializer = BooksSerializer(book)
         return Response(serializer.data)
 
 

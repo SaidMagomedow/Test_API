@@ -10,9 +10,3 @@ class BooksSerializer(serializers.ModelSerializer):
         fields = ('pk', 'title', 'description', 'author')
 
 
-class BooksDeleteSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Books
-        fields = '__all__'
-

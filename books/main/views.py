@@ -9,7 +9,7 @@ from rest_framework.views import APIView
 
 from .mixins import QueryAndSerializeMixin
 from .models import Author, Books
-from .serializers import BooksDeleteSerializer, BooksSerializer
+from .serializers import BooksSerializer
 
 from .models import Author
 

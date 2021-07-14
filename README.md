@@ -19,4 +19,4 @@ docker-compose build
 docker-compose up
 Выполнить миграции
 
-docker-compose run --rm test_api_web python manage.py migrate
+docker-compose run --rm web python manage.py migrate

@@ -5,7 +5,7 @@ from .views import AuthorListView, BooksListView, BookDetailView, BooksUpdateVie
 app_name = 'main'
 
 urlpatterns = [
-    path('', AuthorListView.as_view(), name='landing'),
+    path('', AuthorListView.as_view(), name='author_list'),
     path('books/list/', BooksListView.as_view(), name='book-list'),
     path('books/<int:pk>/', BookDetailView.as_view(), name='book-detail'),
     path('books/update/<int:pk>/', BooksUpdateView.as_view(), name='book-update'),

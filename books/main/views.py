@@ -8,17 +8,15 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .mixins import QueryAndSerializeMixin
-from .models import Author, Books
+from .models import Users, Books
 from .serializers import BooksSerializer
-
-from .models import Author
 
 
 class AuthorListView(ListView):
     """
     Вывод всех авторов
     """
-    model = Author
+    model = Users
     ordering = ['pk']
     template_name = 'author_list.html'
 

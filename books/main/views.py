@@ -1,7 +1,6 @@
 from django.shortcuts import render
-
-# Create your views here.
 from django.views.generic import ListView
+
 from rest_framework import generics
 from rest_framework.generics import UpdateAPIView, DestroyAPIView
 from rest_framework.response import Response

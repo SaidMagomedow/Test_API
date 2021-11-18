@@ -30,7 +30,7 @@ class BookDetailView(APIView):
         return Response(serializer.data)
 
 
-class BooksListView(QueryAndSerializeMixin, generics.ListAPIView):
+class BooksListView(QueryAndSerializeMixin, ListAPIView):
     """
     Вывох всех книг
     """
